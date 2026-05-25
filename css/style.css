@@ -458,3 +458,177 @@ header{
         width: 100%;
     }
 }
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width: 900px){
+
+    /* HEADER */
+
+    header{
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        padding: 40px 20px;
+
+        gap: 30px;
+    }
+
+    .header-izquierda{
+
+        align-items: center;
+    }
+
+    .logo{
+
+        width: 240px;
+    }
+
+    .subtitulo{
+
+        margin-left: 0;
+
+        margin-top: -10px;
+
+        font-size: 0.95rem;
+    }
+
+    .header-derecha{
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin-right: 0;
+
+        padding: 25px;
+    }
+
+    .header-derecha h2{
+
+        font-size: 1.8rem;
+    }
+
+    .header-derecha p{
+
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+    }
+
+    /* ALIADOS */
+
+    .aliados{
+
+        padding: 50px 20px;
+    }
+
+    .aliados h2{
+
+        font-size: 1.8rem;
+
+        text-align: center;
+    }
+
+    .grid-aliados{
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+    .logo-card{
+
+        min-height: 120px;
+    }
+
+    .logo-card img{
+
+        max-width: 150px;
+    }
+
+    /* FORMULARIO */
+
+    .contacto{
+
+        padding: 60px 20px;
+    }
+
+    .formulario-box{
+
+        width: 100%;
+
+        padding: 30px 20px;
+    }
+
+    .formulario-box h2{
+
+        font-size: 1.6rem;
+    }
+
+    #formulario input,
+    #formulario select,
+    #formulario button{
+
+        font-size: 0.95rem;
+
+        padding: 14px;
+    }
+
+    /* WHATSAPP */
+
+    .whatsapp-btn{
+
+        width: 65px;
+        height: 65px;
+
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-btn img{
+
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* CELULARES PEQUEÑOS */
+
+@media(max-width: 600px){
+
+    .grid-aliados{
+
+        grid-template-columns: 1fr;
+    }
+
+    .logo{
+
+        width: 210px;
+    }
+
+    .header-derecha h2{
+
+        font-size: 1.5rem;
+    }
+
+    .header-derecha p{
+
+        font-size: 0.9rem;
+    }
+
+    .aliados h2{
+
+        font-size: 1.5rem;
+    }
+
+    .formulario-box h2{
+
+        font-size: 1.4rem;
+    }
+}
