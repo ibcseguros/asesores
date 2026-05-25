@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+
+    overflow-x: hidden;
+}
+
+/* Fondo */
+body::before{
+    content: "";
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)),
+        url("../img/fondo1.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(4px);
+
+    transform: scale(1.05);
+
+    z-index: -2;
+}
+
+/* Capa oscura suave */
+body::after{
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.25);
+
+    z-index: -1;
+}
+
+/* HEADER */
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header{
+
+    width: 100%;
+
+    padding: 40px 80px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+/* IZQUIERDA */
+
+.header-izquierda{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+/* LOGO */
+
+.logo{
+
+    width: 310px;
+
+    object-fit: contain;
+
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.35));
+}
+
+/* SUBTITULO */
+
+.subtitulo{
+
+    margin-top: -20px;
+
+    margin-left: 20px;
+
+    font-size: 1rem;
+
+    color: black;
+
+    font-weight: bold;
+
+    font-style: italic;
+}
+
+/* DERECHA */
+
+.header-derecha{
+
+    max-width: 600px;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(10px);
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+
+    margin-right: 80px;
+}
+
+.header-derecha h2{
+
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+
+    color: rgb(236, 37, 37);
+
+    letter-spacing: 1px;
+
+    font-style: italic;
+}
+
+.header-derecha p{
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    color: rgb(255, 255, 255);
+
+      font-style: italic;
+}
+.header-derecha strong{
+
+    color: white;
+
+    font-weight: 700;
+}
+
+/* LOGO */
+.logo{
+    width: 310px;
+
+    margin-top: -50px;
+
+    object-fit: contain;
+
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.35));
+}
+
+/* SUBTITULO */
+.subtitulo{
+    margin-top: -70px;
+
+    margin-left: 20px;
+
+    font-size: 1rem;
+
+    color: rgb(255, 255, 255);
+
+    font-weight: bold;
+
+    font-style: italic;
+
+    text-align: left;
+}
+/* ========================= */
+/* ALIADOS */
+/* ========================= */
+
+.aliados{
+    width: 100%;
+
+    padding: 60px 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aliados h2{
+    font-size: 2.2rem;
+
+    margin-bottom: 40px;
+
+    color: white;
+
+    letter-spacing: 2px;
+
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    font-style: italic;
+}
+
+/* GRID */
+
+.grid-aliados{
+    width: 100%;
+    max-width: 1200px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    column-gap: 25px;
+    row-gap: 5px;
+}
+
+/* TARJETAS */
+
+.logo-card{
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s ease;
+
+    min-height: 160px;
+}
+
+.logo-card:hover{
+    transform: scale(1.05);
+}
+
+/* IMAGENES */
+
+.logo-card img{
+    width: 100%;
+    max-width: 220px;
+
+    object-fit: contain;
+
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
+}
+/* ========================= */
+/* FORMULARIO */
+/* ========================= */
+
+.contacto{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 20px;
+}
+
+.formulario-box{
+    width: 100%;
+    max-width: 500px;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+}
+
+.formulario-box h2{
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 2rem;
+
+    letter-spacing: 2px;
+
+    text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* FORM */
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+/* INPUTS */
+
+#formulario input,
+
+#formulario select{
+    padding: 15px 18px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 1rem;
+
+    background: rgba(255,255,255,0.9);
+
+    transition: 0.3s ease;
+}
+
+#formulario input:focus,
+
+#formulario select:focus{
+    transform: scale(1.02);
+
+    box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+/* BOTON */
+
+#formulario button{
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #0f172a;
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#formulario button:hover{
+    background: #1e293b;
+
+    transform: translateY(-2px);
+}
+/* MENSAJE EXITOSO */
+
+#mensaje-exito{
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: rgb(64, 185, 64);
+
+    font-weight: bold;
+
+    font-size: 1.3rem;
+
+    opacity: 0;
+
+    transition: 0.3s ease;
+}
+
+/* ========================= */
+/* BOTON WHATSAPP */
+/* ========================= */
+
+.whatsapp-btn{
+
+    position: fixed;
+
+    bottom: 25px;
+    right: 25px;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.3);
+
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.35);
+
+    transition: all 0.3s ease;
+
+    z-index: 9999;
+}
+
+/* HOVER */
+
+.whatsapp-btn:hover{
+
+    transform: scale(1.1);
+
+    box-shadow: 0 0 25px rgba(37,211,102,0.7);
+}
+
+/* ICONO */
+
+.whatsapp-btn img{
+
+    width: 70px;
+
+    height: 70px;
+
+    object-fit: contain;
+}
+@media(max-width: 900px){
+
+    header{
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 40px 20px;
+    }
+
+    .header-izquierda{
+
+        align-items: center;
+    }
+
+    .subtitulo{
+
+        margin-left: 0;
+    }
+
+    .header-derecha{
+
+        width: 100%;
+    }
+}
