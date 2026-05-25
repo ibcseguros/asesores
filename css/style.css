@@ -455,7 +455,21 @@ header{
 
     .header-derecha{
 
-        width: 100%;
+    width: 100%;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    padding: 30px 25px;
+    }
+    .grid-aliados{
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
     }
 }
 /* ========================= */
@@ -544,13 +558,19 @@ header{
 
     .logo-card{
 
-        min-height: 120px;
-    }
+    min-height: 180px;
+
+    padding: 20px;
+}
 
     .logo-card img{
 
-        max-width: 150px;
-    }
+    width: 100%;
+
+    max-width: 220px;
+
+    object-fit: contain;
+}
 
     /* FORMULARIO */
 
@@ -559,25 +579,27 @@ header{
         padding: 60px 20px;
     }
 
-    .formulario-box{
+   .formulario-box{
 
-        width: 100%;
+    width: 100%;
 
-        padding: 30px 20px;
+    max-width: 95%;
+
+    padding: 35px 25px;
     }
 
     .formulario-box h2{
 
-        font-size: 1.6rem;
+    font-size: 1.8rem;
     }
 
     #formulario input,
     #formulario select,
     #formulario button{
 
-        font-size: 0.95rem;
+    font-size: 1rem;
 
-        padding: 14px;
+    padding: 18px;
     }
 
     /* WHATSAPP */
